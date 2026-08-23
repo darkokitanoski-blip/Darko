@@ -79,6 +79,7 @@
                 </div>
 
 
+
             </div>
             <div class="experiences">
                 <footer class="allrightsreserved-wrapper">
@@ -142,7 +143,7 @@
                         </svg>
                     </div>
                     <div class="skill"><span>100%</span>
-                        <p>JS</p><svg viewBox="0 0 100 100" style="display: block; width: 100%;">
+                        <p>JavaScript</p><svg viewBox="0 0 100 100" style="display: block; width: 100%;">
                             <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#000"
                                 stroke-width="7" fill-opacity="0"></path>
                             <path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#00ff00"
@@ -320,13 +321,92 @@
             </footer>
         </div>
 
+
         <div class="menu-bar-wrapper">
+            <div class="menu-bar-wrapper-icons">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+                </svg>
+            </div>
+            <ul class="hidden-ul">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>History</li>
+                <li>Events</li>
+            </ul>
+            <p class="menu-bar-wrapper-selected-tab">
+                Home
+            </p>
+
+            <svg id="gaming" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M21.986 9.74a3.193 3.193 0 0 0-.008-.088A5.003 5.003 0 0 0 17 5H7a4.97 4.97 0 0 0-4.987 4.737c-.01.079-.013.161-.013.253v6.51c0 .925.373 1.828 1.022 2.476A3.524 3.524 0 0 0 5.5 20c1.8 0 2.504-1 3.5-3 .146-.292.992-2 3-2 1.996 0 2.853 1.707 3 2 1.004 2 1.7 3 3.5 3 .925 0 1.828-.373 2.476-1.022A3.524 3.524 0 0 0 22 16.5V10c0-.095-.004-.18-.014-.26zM7 12.031a2 2 0 1 1-.001-3.999A2 2 0 0 1 7 12.031zm10-5a1 1 0 1 1 0 2 1 1 0 1 1 0-2zm-2 4a1 1 0 1 1 0-2 1 1 0 1 1 0 2zm2 2a1 1 0 1 1 0-2 1 1 0 1 1 0 2zm2-2a1 1 0 1 1 0-2 1 1 0 1 1 0 2z">
+                </path>
+            </svg>
 
         </div>
     </div>
 
 
 
+    <div id="game-overlay" class="game-overlay">
+
+        <div class="game-window">
+
+            <!-- Top bar -->
+            <div class="game-header">
+                <div class="game-status">
+                    <span class="status-dot"></span>
+                    <span>SECRET TERMINAL</span>
+                </div>
+
+                <div class="game-controls">
+
+                    <!-- Fullscreen -->
+                    <button id="fullscreen-game" class="game-btn" title="Fullscreen">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path d="M7 14H5v5h5v-2H7zm-2-4h2V7h3V5H5zm12 7h-3v2h5v-5h-2zM14 5v2h3v3h2V5z"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Close -->
+                    <button id="close-game" class="game-btn close-btn" title="Close">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6 6L18 18M18 6L6 18" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Game -->
+            <div class="game-container">
+
+                <div class="scanlines"></div>
+
+                <iframe src="https://www.madkidgames.com/full/safe-zone" width="100%" height="540" frameborder="0"
+                    allowfullscreen scrolling="no" loading="lazy">
+                </iframe>
+
+            </div>
+
+            <!-- Bottom information -->
+            <div class="game-footer">
+                <span>/// CLASSIFIED ///</span>
+                <span>Daretaxxx</span>
+                <span>ESC TO EXIT</span>
+            </div>
+
+        </div>
+
+
+        <script src="js/index.js"></script>
+
+    </div>
 </body>
 
 </html>
