@@ -876,6 +876,7 @@ header {
         width: 400px;
         position: absolute;
         top: 0;
+        left: 45%;
         margin-top: 0px;
         transition: 1.2s;
 
@@ -891,13 +892,34 @@ header {
     }
 
     .wrapper-info {
-        left: -70%;
+        left: -100%;
         transition: left 0.5s ease;
     }
 
     .wrapper-info.active-wrapper-info {
         left: 0;
         top: 0;
+        height: 100vh;
+
+    }
+
+    .entitlements-wrapper .skill:nth-child(3) {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .wrapper-info.active-wrapper-info .skills-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .wrapper-info.active-wrapper-info .skills-section div{
+
+        width: 40%;
 
     }
 
@@ -972,7 +994,7 @@ header {
     }
 
     .menu-bar-wrapper {
-        right: -30%;
+        right: -75%;
 
         height: 100vh;
         margin: 0;
