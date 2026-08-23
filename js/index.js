@@ -2,7 +2,10 @@ const menubar = document.querySelector(".menu-bar-wrapper")
 const menubaricon = document.querySelector(".menu-bar-wrapper-icons")
 const hero = document.querySelector(".hero")
 const hiddenul = document.querySelector(".hidden-ul")
+const menubarburger = document.querySelector("#menubarburger")
 const selectedtabtext = document.querySelector(".menu-bar-wrapper-selected-tab")
+const userInfoButton = document.querySelector("#user-info-button")
+const wrapperInfo = document.querySelector(".wrapper-info")
 
 menubaricon.addEventListener("click", () => {
     if (menubar.classList.contains("active-menu-bar")) {
@@ -11,29 +14,45 @@ menubaricon.addEventListener("click", () => {
         if (window.innerWidth >= 1000) {
 
             hero.style.left = "21%"
+            menubaricon.querySelector("svg").style.left = "50%"
         } else {
             hero.style.left = "0%"
+            menubarburger.style.left = "90%"
         }
         selectedtabtext.style.display = "block"
-        menubaricon.querySelector("svg").style.left = "50%"
     } else {
         menubar.classList.add("active-menu-bar")
-        hero.style.left = "8%"
+        if (window.innerWidth >= 1000) {
+
+            hero.style.left = "8%"
+            menubaricon.querySelector("svg").style.left = "20%"
+        } else {
+            hero.style.left = "0%"
+            menubarburger.style.left = "60%"
+        }
+
         hiddenul.classList.add("visible-ul")
         selectedtabtext.style.display = "none"
-        menubaricon.querySelector("svg").style.left = "20%"
 
     }
 })
 
+userInfoButton.addEventListener("click", () => {
+    wrapperInfo.classList.toggle("active-wrapper-info")
+})
+
 window.addEventListener("resize", () => {
 
-
-    if (window.innerWidth >= 1000) {
-
+    if (window.innerWidth >= 1300) {
         hero.style.left = "21%"
     } else {
         hero.style.left = "0%"
+                window.location.reload();
+    }
+
+    if (window.innerWidth >= 1000) {
+        wrapperInfo.classList.remove("active-wrapper-info")
+        window.location.reload();
     }
 })
 

@@ -28,6 +28,13 @@
 
     <div class="container">
 
+        <button id="user-info-button" aria-label="Open profile information">
+            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 0 0 0 256zm89.6 32h-11.8c-22.2 10.2-50.1 16-77.8 16s-55.6-5.8-77.8-16h-11.8C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6C448 348.2 387.8 288 314.4 288z" />
+            </svg>
+        </button>
+
         <div class="hero">
             <header style="background-image: url(images/16939-mountains-landscapes-nature-norway-rivers-fjord.jpg);">
                 <div id="shadow-over-background"></div>
@@ -77,19 +84,28 @@
                         perferendis alias fuga! Sapiente unde dolorem consectetur, aliquid laudantium quam deleniti,
                         ratione magni quasi iste totam rerum.</p>
                 </div>
+                <div class="mobile-rights-reserved-wrapper">
+                    <footer class="allrightsreserved-wrapper">
+                        <p id="rights">© 2026. All rights reserved</p>
+                        <span>
+                            <p>Email:</p>
+                            <a href="mailto:kitanoskidarko08@gmail.com">kitanoskidarko08@gmail.com</a>
+                        </span>
+                    </footer>
+                </div>
 
 
 
             </div>
-            <div class="experiences">
-                <footer class="allrightsreserved-wrapper">
-                    <p>© 2026. All rights reserved</p>
-                    <span>
-                        <p>Email:</p>
-                        <a href="mailto:kitanoskidarko08@gmail.com">kitanoskidarko08@gmail.com</a>
-                    </span>
-                </footer>
+            <div class="experiences" id="desktop-rights-reserved-wrapper">
 
+                    <footer class="allrightsreserved-wrapper">
+                        <p id="rights">© 2026. All rights reserved</p>
+                        <span>
+                            <p>Email:</p>
+                            <a href="mailto:kitanoskidarko08@gmail.com">kitanoskidarko08@gmail.com</a>
+                        </span>
+                    </footer>
             </div>
 
 
@@ -324,8 +340,8 @@
 
         <div class="menu-bar-wrapper">
             <div class="menu-bar-wrapper-icons">
-                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                <svg stroke="currentColor" id="menubarburger" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
                 </svg>
             </div>
