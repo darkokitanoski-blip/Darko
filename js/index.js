@@ -47,12 +47,12 @@ window.addEventListener("resize", () => {
         hero.style.left = "21%"
     } else {
         hero.style.left = "0%"
-                window.location.reload();
+        window.location.reload();
     }
 
     if (window.innerWidth >= 1000) {
         wrapperInfo.classList.remove("active-wrapper-info")
-        window.location.reload();
+
     }
 })
 
