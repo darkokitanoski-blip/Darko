@@ -17,7 +17,7 @@ menubaricon.addEventListener("click", () => {
             menubaricon.querySelector("svg").style.left = "50%"
         } else {
             hero.style.left = "0%"
-            menubarburger.style.left = "90%"
+
         }
         selectedtabtext.style.display = "block"
     } else {
@@ -28,7 +28,6 @@ menubaricon.addEventListener("click", () => {
             menubaricon.querySelector("svg").style.left = "20%"
         } else {
             hero.style.left = "0%"
-            menubarburger.style.left = "60%"
         }
 
         hiddenul.classList.add("visible-ul")

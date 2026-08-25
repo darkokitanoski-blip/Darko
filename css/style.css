@@ -20,6 +20,11 @@
     animation: dots 0.6s steps(4) infinite;
 }
 
+.hidden-ul a {
+    color: white;
+    text-decoration: none;
+}
+
 @keyframes dots {
     0% {
         content: "";
@@ -353,6 +358,7 @@ header {
     justify-content: space-around;
     position: absolute;
     top: 52%;
+    margin-top: 20px;
 }
 
 .titles span:nth-child(1)::after {
@@ -675,9 +681,7 @@ header {
 
 }
 
-.skills-section-horisontal .skill:nth-child(3)
-
-.skills-section-horisontal .skill:nth-child(4) {
+.skills-section-horisontal .skill:nth-child(3) .skills-section-horisontal .skill:nth-child(4) {
     position: relative;
     height: 70px;
     margin-top: -5px;
@@ -693,23 +697,153 @@ header {
 
 #lineprog2-1 {
     position: absolute;
-    top: 90%
+    top: 90%;
+    animation: lineprog2-1animation 1s ease-in-out;
+}
+
+@keyframes lineprog2-1animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 #lineprog2-2 {
     position: absolute;
-    top: 60%
+    top: 60%;
+    animation: lineprog2-2animation 1s ease-in-out;
+}
+
+@keyframes lineprog2-2animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 #lineprog2-3 {
     position: absolute;
-    top: 60%
+    top: 60%;
+    animation: lineprog2-3animation 1s ease-in-out;
+}
+
+@keyframes lineprog2-3animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }
 
 #lineprog2-4 {
     position: absolute;
-    top: 60%
+    top: 60%;
+    animation: lineprog2-4animation 1s ease-in-out;
 }
+
+@keyframes lineprog2-4animation {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+#skill-round-svg1 {
+    animation: skill-round-svg1animation 1.5s ease-in-out;
+}
+
+@keyframes skill-round-svg1animation {
+    0% {
+        stroke-dasharray: 0, 292.273;
+    }
+
+    100% {
+        stroke-dasharray: 292.273, 292.273;
+    }
+}
+
+#skill-round-svg2 {
+    animation: skill-round-svg2animation 1.5s ease-in-out;
+}
+
+@keyframes skill-round-svg2animation {
+    0% {
+        stroke-dasharray: 0, 292.273;
+    }
+
+    100% {
+        stroke-dasharray: 233.818, 292.273;
+    }
+}
+
+#skill-round-svg3 {
+    animation: skill-round-svg3animation 1.5s ease-in-out;
+}
+
+@keyframes skill-round-svg3animation {
+    0% {
+        stroke-dasharray: 0, 292.273;
+    }
+
+    100% {
+        stroke-dasharray: 292.273, 292.273;
+    }
+}
+
+#skill-round-svg4 {
+    animation: skill-round-svg4animation 1.5s ease-in-out;
+}
+
+@keyframes skill-round-svg4animation {
+    0% {
+        stroke-dasharray: 0, 292.273;
+    }
+
+    100% {
+        stroke-dasharray: 292.273, 292.273;
+    }
+}
+
+#skill-round-svg5 {
+    animation: skill-round-svg5animation 1.5s ease-in-out;
+}
+
+@keyframes skill-round-svg5animation {
+    0% {
+        stroke-dasharray: 0, 292.273;
+    }
+
+    100% {
+        stroke-dasharray: 202.273, 292.273;
+    }
+}
+
+#skill-round-svg6 {
+    animation: skill-round-svg6animation 1.5s ease-in-out;
+}
+
+@keyframes skill-round-svg6animation {
+    0% {
+        stroke-dasharray: 0, 292.273;
+    }
+
+    100% {
+        stroke-dasharray: 202.273, 292.273;
+    }
+}
+
 
 .entitlements-wrapper {
     margin-bottom: 10px;
@@ -727,6 +861,12 @@ header {
     opacity: 0.6;
     cursor: pointer;
     transition: 0.2s;
+
+}
+
+.downloadCV-wrapper a {
+    color: white;
+    text-decoration: none;
 }
 
 .downloadCV-wrapper:hover {
@@ -775,6 +915,19 @@ header {
     opacity: 0.5;
     cursor: pointer;
 }
+
+#portfolio-button-header {
+    transform: translate(0px, 20px);
+    transition: 500ms;
+    cursor: pointer;
+
+}
+
+#portfolio-button-header:hover {
+    transform: translate(0px, 10px);
+    background-color: #000;
+}
+
 
 .menu-bar-wrapper-icons svg:hover {
     opacity: 1;
@@ -849,6 +1002,26 @@ header {
         height: 60%;
     }
 
+    #portfolio-button-header {
+        transform: translate(50%, 20px);
+        transition: 500ms;
+        cursor: pointer;
+
+    }
+
+    #portfolio-button-header:hover {
+        transform: translate(50%, 10px);
+        transition: 500ms;
+        cursor: pointer;
+
+    }
+
+    .hidden-ul li {
+
+        width: 85%;
+        text-align: center;
+    }
+
     .experiences .mobile-rights-reserved-wrapper {
         display: block;
     }
@@ -878,13 +1051,6 @@ header {
         fill: white;
     }
 
-    .menu-bar-wrapper.active-menu-bar{
-        width: 400px;
-        right: -30vw;
-        
-        margin-top: 0px;
-    }
-
     header #pfp-picture-wrapper {
         display: none;
     }
@@ -910,7 +1076,7 @@ header {
         display: flex;
         flex-direction: row;
 
-        
+
     }
 
     .wrapper-info.active-wrapper-info .skills-section {
@@ -921,7 +1087,7 @@ header {
 
     }
 
-    .wrapper-info.active-wrapper-info .skills-section div{
+    .wrapper-info.active-wrapper-info .skills-section div {
 
         width: 40%;
 
@@ -981,11 +1147,11 @@ header {
 
     .hero h2 {
         text-align: center;
-        margin-top: 260px;
+        margin-top: 320px;
     }
 
     .hero .experiences {
-        margin-top: 190px;
+        margin-top: 230px;
         width: 92%;
         left: 1%;
     }
@@ -996,12 +1162,15 @@ header {
     }
 
     .menu-bar-wrapper {
-        right: -105%;
+        right: -100%;
+        transition: right 0.5s ease;
+    }
 
+    .menu-bar-wrapper.active-menu-bar {
+        right: 0;
+        width: 400px;
         height: 100vh;
-        margin: 0;
-        padding: 0;
-
+        margin-top: 0;
     }
 
     .experiences div:nth-child(4) {
