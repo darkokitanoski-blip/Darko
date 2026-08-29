@@ -41,7 +41,7 @@ menubaricon.addEventListener("click", () => {
 
         selectedtabtext.style.display = "block"
 
-    // öppna menu-bar 
+        // öppna menu-bar 
     } else {
 
         menubar.classList.add("active-menu-bar")
@@ -76,11 +76,36 @@ window.addEventListener("resize", () => {
     if (window.innerWidth >= 1300) {
 
         hero.style.left = "21%"
+        menubar.classList.remove("active-menu-bar")
+        hiddenul.classList.remove("visible-ul")
+        setTimeout(() => {
+            menubarPath.setAttribute("d", burgerPath)
+
+        }, 150)
+
+        menubaricon.querySelector("svg").style.left = "50%"
+        selectedtabtext.style.display = "block"
+
+
 
     } else {
 
         hero.style.left = "0%"
-        window.location.reload()
+        menubar.classList.remove("active-menu-bar")
+        hiddenul.classList.remove("visible-ul")
+        setTimeout(() => {
+            menubarPath.setAttribute("d", burgerPath)
+
+        }, 150)
+
+
+
+
+        hero.style.left = "0%"
+        menubaricon.querySelector("svg").style.left = "90%"
+
+
+        selectedtabtext.style.display = "hidden"
 
     }
 
